@@ -56,7 +56,8 @@
               center="{{data.address}}"
               radius="{{data.milles.selectedOption.id}}">
             </shape>
-            <marker position="{{data.address}}" title="{{data.address}}"></marker>
+            <marker position="{{data.address}}" title="{{data.address}}"  animation="Animation.BOUNCE"></marker>
+            <marker ng-repeat="loc in data.types" position="{{loc.location}}" title="{{data.address}}"></marker>
             <!-- <marker position="current-location" title="current-location"></marker> -->
           </ng-map>
         </div>

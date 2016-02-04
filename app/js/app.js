@@ -6,7 +6,7 @@ var myApp = angular.module('myApp', ['ngMap'])
       console.log('shapes', map.shapes);
     });
     this.types = providers;
-    this.address = "Cochabamba Bolivia";
+    this.address = "22182 Virginia";
     this.milles = mil;
     this.getRadius = function(num) {
       return Math.sqrt(num) * 100;
